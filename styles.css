@@ -1,0 +1,224 @@
+*{
+margin: 0;
+padding: 0;
+outline: 0;
+box-sizing: border-box;
+}
+ body{
+font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ .nav{
+    background-color: rgb(250, 168, 209);
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+ }
+
+.nav-list{
+display: flex;
+align-items: center;
+list-style: none;
+margin-right: 2px;
+}
+.nav-list a{
+text-decoration: none;
+color: #7a7a7a;
+padding: 20px;
+}
+.nav-list a:hover{
+    color: #ffffff;
+} 
+.main{
+    width: 100%;
+    
+    height: calc(100vh - 80px);
+    /*background-image: url("images/office-desk-6180921_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;*/
+
+    background: #ffffff url("images/office-desk-6180921_1280.jpg") no-repeat center right;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 20%;
+}
+.btn{
+padding: 10px 8px;
+width: 50px;
+color: #7a7a7a;
+background: rgb(250, 168, 209);
+border: 1px solid #ffffff;
+text-align: right;
+user-select: none;
+cursor: pointer;
+
+}
+.mai h1{
+color: #ffffff;
+font-size: 54px;
+}
+.main p{
+    font-size: 24px;
+    font-style: italic;
+    color: #7a7a7a;
+    margin-top: 6px;
+    margin-bottom: 40px;
+}
+
+.call-to-action{
+    cursor: pointer;
+    background-color: fuchsia;
+    border: 0;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.9;
+}
+.call-to-action:hover{
+    transform: scale(1.1);
+}
+
+.main a{
+    background-color: rgb(250, 168, 209);
+    text-decoration: none;
+    color: #181818;
+}
+
+
+.about{
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about img{
+    max-width: 450px;
+    border-radius: 8px;
+} 
+
+.about div h2{
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.projects{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding-top: 80px;
+}
+
+.projects h2{
+ font-size: 32px;
+ margin-bottom: 8px;
+ margin-top: 20px;
+} 
+
+.projects p{
+    margin-bottom: 40px;
+    font-size: italic;
+    color: #7a7a7a;
+}
+
+.projects img{
+    opacity: 0.8;
+} 
+
+.projects img:hover{
+    opacity: 1;
+}
+.action{
+    background-color: rgb(250, 168, 209);
+    border: 0;
+    padding: 12px 44px;
+    border-radius: 40px;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+
+footer{
+    width: 100%;
+    background-color:rgb(250, 168, 209);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer p{
+    margin-left: 12px;
+}
+
+@media (max width:1050px){
+.main h1{
+    font-size: 45px;
+}
+.main p{
+    font-size: 18px;
+}
+.main{
+    background-size: cover;
+}
+.about{
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.about div{
+    max-width: 80px;
+}
+.about div 2{
+    font-size: 45px;
+}
+.about img{
+    width: 80px;
+    margin-top: 30px;
+}
+.projects img{
+    width: 27.5;
+}
+footer{
+    flex-direction: column;
+}
+footer h3{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+footer p{
+    margin: 0;
+}
+}
